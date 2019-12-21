@@ -1,0 +1,92 @@
+{
+  "name": "foresight-gatsby-starter",
+  "version": "0.0.0",
+  "description": "A starter for GatsbyJS with a preconfigured MDX, Storybook and ESLint environment",
+  "keywords": [
+    "gatsby",
+    "gatsby-starter",
+    "emotion",
+    "mdx",
+    "storybook"
+  ],
+  "homepage": "https://github.com/open-sorcerers/foresight-gatsby-starter",
+  "bugs": "https://github.com/open-sorcerers/foresight-gatsby-starter/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Open Sorcerers",
+    "email": "fpopensorcerers@gmail.com",
+    "url": "https://open.sorcerers.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/open-sorcerers/foresight-gatsby-starter"
+  },
+  "scripts": {
+    "start": "nps"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "@mdx-js/mdx": "^1.5.1",
+    "@mdx-js/react": "^1.5.1",
+    "emotion-theming": "^10.0.19",
+    "gatsby": "^2.17.11",
+    "gatsby-image": "^2.2.31",
+    "gatsby-plugin-emotion": "^4.1.18",
+    "gatsby-plugin-manifest": "^2.2.27",
+    "gatsby-plugin-mdx": "^1.0.56",
+    "gatsby-plugin-offline": "^3.0.19",
+    "gatsby-plugin-react-helmet": "^3.1.14",
+    "gatsby-plugin-sharp": "^2.2.37",
+    "gatsby-plugin-styled-components": "^3.1.12",
+    "gatsby-source-filesystem": "^2.1.36",
+    "gatsby-transformer-sharp": "^2.3.3",
+    "polished": "^3.4.2",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.26.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "react-uid": "^2.2.0",
+    "styled-components": "^4.4.1",
+    "styled-normalize": "^8.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@storybook/addon-actions": "^5.2.6",
+    "@storybook/addon-docs": "^5.2.6",
+    "@storybook/react": "^5.2.6",
+    "@svgr/webpack": "^4.3.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-compat": "^3.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^23.0.3",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prefer-object-spread": "^1.2.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-ramda": "^2.5.1",
+    "eslint-plugin-react": "^7.16.0",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-react-svg": "^2.1.2",
+    "husky": ">=1",
+    "lint-staged": ">=8",
+    "prettier": "^1.19.1",
+    "react-markdown": "^4.2.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}

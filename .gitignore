@@ -1,0 +1,14 @@
+# project dependencies
+.cache
+node_modules
+yarn-error.log
+
+# build directory
+public
+
+# generated folders
+coverage
+
+# OS generated files
+.DS_Store
+*.swp

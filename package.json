@@ -1,6 +1,6 @@
 {
   "name": "foresight-gatsby-starter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A starter for GatsbyJS with a preconfigured MDX, Storybook and ESLint environment",
   "keywords": [
     "gatsby",

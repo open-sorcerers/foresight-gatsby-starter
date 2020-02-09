@@ -63,6 +63,7 @@ module.exports = {
         alias: {
           '@root': '.',
           '@src': 'src',
+          '@styles': 'src/styles',
           '@assets': 'src/assets',
           '@components': 'src/components',
           '@pages': 'src/pages',

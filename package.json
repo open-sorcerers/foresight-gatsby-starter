@@ -29,6 +29,8 @@
     "@emotion/styled": "^10.0.23",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
+    "@open-sorcerers/breakpoints": "^0.0.2",
+    "bodypaint": "^0.0.1",
     "emotion-theming": "^10.0.19",
     "gatsby": "^2.17.11",
     "gatsby-image": "^2.2.31",

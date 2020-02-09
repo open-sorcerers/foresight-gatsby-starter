@@ -1,7 +1,9 @@
 module.exports = {
   scripts: {
     build: {
-      default: 'gatsby build',
+      modernizr: 'modernizr -c modernizr.config.json -d static',
+      script: 'nps build.modernizr build.gatsby',
+      gatsby: 'gatsby build',
       storybook: 'cross-env NODE_ENV=production build-storybook -c .storybook -o public/docs'
     },
     clean: 'rimraf ./.cache ./public',
@@ -10,7 +12,10 @@ module.exports = {
       script: 'gatsby develop',
       storybook: 'cross-env NODE_ENV=production start-storybook -p 9000 -c .storybook'
     },
-    lint: 'eslint .',
+    lint: {
+      script: 'nps "lint.eslint src"',
+      eslint: 'eslint --fix'
+    },
     serve: 'gatsby serve'
   }
 }

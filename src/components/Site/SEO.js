@@ -45,6 +45,7 @@ const SEO = ({ location: { pathname }, pageContext: { frontmatter }, seo }) => {
       <meta property="og:type" content={type} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
+      <script type="text/javascript" src="/modernizr.js" defer />
     </Helmet>
   )
 }

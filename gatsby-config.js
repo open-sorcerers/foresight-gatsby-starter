@@ -66,9 +66,11 @@ module.exports = {
           '@styles': 'src/styles',
           '@assets': 'src/assets',
           '@components': 'src/components',
+          '@hoc': 'src/hoc',
           '@pages': 'src/pages',
           '@templates': 'src/templates',
-          '@services': 'src/services'
+          '@services': 'src/services',
+          '@utils': 'src/utils'
         },
         extensions: ['js', 'mdx']
       }

@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
@@ -54,7 +53,7 @@ export const Nav = styled.div`
   }
 `
 
-export const Item = styled(({ isActive, ...other }) => <Link {...other} />)`
+export const Item = styled(Link)`
   padding: 16px 8px;
   color: #fff;
   font-weight: 500;

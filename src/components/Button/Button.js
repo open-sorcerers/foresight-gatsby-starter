@@ -3,8 +3,14 @@ import PropTypes from 'prop-types'
 
 import { StyledButton } from './styled'
 
+/* global alert */
+
 const Button = ({ children, ...other }) => {
-  return <StyledButton {...other}>{children}</StyledButton>
+  return (
+    <StyledButton {...other} onClick={() => alert('Woo, MDX!')}>
+      {children}
+    </StyledButton>
+  )
 }
 
 Button.propTypes = {

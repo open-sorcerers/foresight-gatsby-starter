@@ -1,10 +1,11 @@
 module.exports = {
   root: true,
   parser: 'babel-eslint',
-  extends: ['plugin:prettier/recommended'],
-  plugins: ['import', 'react', 'prefer-object-spread', 'compat'],
+  settings: { react: { version: 'detect' } },
+  extends: ['eslint-config-sorcerers', 'plugin:prettier/recommended', 'plugin:react/recommended'],
+  plugins: ['react'],
   globals: {
-    graphql: false,
+    graphql: false
   },
   rules: {
     // Prettier warnings
@@ -29,14 +30,14 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
 
     // Turn off wrapping every emoji in <span> tags
-    'jsx-a11y/accessible-emoji': 'off',
+    'jsx-a11y/accessible-emoji': 'off'
   },
   overrides: [
     {
       files: ['**/*.stories.js'],
       rules: {
-        'import/no-extraneous-dependencies': 'off',
-      },
-    },
-  ],
-};
+        'import/no-extraneous-dependencies': 'off'
+      }
+    }
+  ]
+}

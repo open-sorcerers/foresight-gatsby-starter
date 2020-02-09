@@ -55,4 +55,4 @@ const styles = css`
   }
 `
 
-export const BaseCSS = props => <Global styles={styles} />
+export const BaseCSS = () => <Global styles={styles} />

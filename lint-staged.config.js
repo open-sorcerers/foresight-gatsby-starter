@@ -1,3 +1,7 @@
+const { reject, includes } = require('ramda')
 module.exports = {
-  '**/*.js': ['eslint --fix', 'git add']
+  '**/*.js': x => {
+    const excluded = reject(includes('modernizr.js'), x)
+    return `nps "lint.eslint ${excluded.join(' ')}"`
+  }
 }

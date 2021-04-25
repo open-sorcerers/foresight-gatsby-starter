@@ -1,0 +1,6 @@
+settings:
+  react:
+    version: detect
+extends:
+- sorcerers
+- plugin:react/recommended

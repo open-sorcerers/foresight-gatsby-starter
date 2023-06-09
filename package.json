@@ -34,7 +34,7 @@
     "@rebass/forms": "^4.0.6",
     "bodypaint": "^0.0.4",
     "emotion-theming": "^10.0.27",
-    "gatsby": "3",
+    "gatsby": "4",
     "gatsby-image": "^3.3.0",
     "gatsby-plugin-emotion": "^6.3.0",
     "gatsby-plugin-manifest": "^3.3.0",
